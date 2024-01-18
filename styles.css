@@ -1,35 +1,107 @@
 body {
-  background-color: lightgray;
-  font-family: Arial;
+  margin:0;
+  background-color: white !important;
+
+}
+.section { 
+  display:flex;
+  height: 70vh;
+  width: 50vw;
+  margin: 15vh 25vw;
+  scroll-margin-top: 15vh;
+}
+.section p {
+  font-family:didot;
+  font-size:15px;
+  margin-right:20px;
+}
+.section a {
+  color:black !important;
+  transition: color 0s;
+
+}
+.section a:hover {
+  font-style:italic !important;
+  color:gray !important;
+}
+.header {
+  background-image:url('images/bg.jpeg');
+  background-size: cover;
+  height: 70vh;
+  width: 50vw;
+  margin: 15vh 25vw;
+  border: 1px solid white;
+  align-items: center;
+  color: white;;
+}
+.header h1 {
+  font-size:3vw;
+  font-family:serif;
+  margin:55% 20px 0px 20px;
+}
+.header p{
+  font-family:didot;
+  margin:0px 30px;
+  font-style: italic;
+  font-size: 1vw;
+}
+.nav {
+  width: 100%;
+  background-color: white;
+  top: 0;
+  height: 15vh;
+  position: fixed;
+  color: black;
+  font-family: DIDOT;
+  size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  font-style: none;
+}
+.nav a { 
+  justify-content: center;
+  margin: 0 20px;
+  color:black !important;
+  text-decoration: none !important;
+  transition: color 0.5s;
+}
+.nav a:hover{
+  color:gainsboro !important;
+}
+.half {
+  width: 50%;
+  height:100%;
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.half img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(247, 247, 247) !important;
+  top: 0;
+  height: 5vh;
+  color: black;
+  font-family: DIDOT;
+  size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
-  justify-content: center;
+  text-align: center;
 }
 
-h1 {
-  font-size: 72px;
-}
-
-p {
-  font-size: 28px;
-}
-
-button {
-    color: white;
-    font-size: 125%;
-    border-radius: 4px;
-    border: none;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: rgb(28, 184, 65);
-    padding: 10px;
-    outline: none;
-    cursor: pointer;
-}
-
-button:hover {
-  background: rgb(66, 184, 221);
-  padding: 12px;
-}
+html { 
+  scroll-behavior: smooth; 
+} 
